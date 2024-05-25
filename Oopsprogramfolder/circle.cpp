@@ -2,11 +2,11 @@
 using namespace std;
 class circle
 {
-  float radius;
-  float area;
-  float circumference;
+  float radius;// non static or instance variable
+  float area;// non static or instance variable
+  float circumference;// non static or instance variable
   public:
-  void setradius(float r)
+  void setradius(float r)// r is local variable
   {
     radius=r;
   }

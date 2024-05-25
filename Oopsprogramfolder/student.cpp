@@ -2,9 +2,9 @@
 using namespace std;
 class student
 {
-   string name;// data memebrs
-   int rno;
-   float per;
+   string name;// non static or instance variable
+   int rno;// non static or instance variable
+   float per;// non static or instance variable
    public :
    void setdata(string s,int a,float b)// methods
    {
