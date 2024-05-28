@@ -23,8 +23,9 @@ int main()
 {
     demo d1,d2,d3;
     d1.setdata(12,13,111,222);
-    d3.setdata(16,17,555,666);
     d2.setdata(14,15,333,444);
+    d3.setdata(16,17,555,666);
+    
    
     d1.display();
     d2.display();
