@@ -50,6 +50,24 @@ class student
       cout<<"information about all methods"<<endl;
       cout<<"____________________________________"<<endl;
    }
+   static void avrage(student obj1,student obj2)
+   {
+      float avg=(obj1.per+obj2.per)/2.0;
+      cout<<"avrage percentage of "<<obj1.name<<" and "<<obj2.name<<" = "<<avg<<endl;
+      cout<<"___________________________________________________________"<<endl;
+   }
+    static void avrage(student obj1,student obj2,student obj3)
+   {
+      float avg=(obj1.per+obj2.per+obj3.per)/3.0;
+      cout<<"avrage percentage of "<<obj1.name<<" and "<<obj2.name<<" and "<<obj3.name<<" = "<<avg<<endl;
+      cout<<"___________________________________________________________"<<endl;
+   }
+     static void avrage(student obj1,student obj2,student obj3,student obj4)
+   {
+      float avg=(obj1.per+obj2.per+obj3.per+obj4.per)/4.0;
+      cout<<"avrage percentage of "<<obj1.name<<" and "<<obj2.name<<" and "<<obj3.name<<" and "<<obj4.name<<" = "<<avg<<endl;
+      cout<<"___________________________________________________________"<<endl;
+   }
 
 };
 int student::totalpass=0;
@@ -69,6 +87,8 @@ int main()
  student::totalresult();
  student::disptotalstd();
  student::classinfo();
-
-    return 0;
+ student::avrage(s1,s2);
+ student::avrage(s1,s2,s3);
+ student::avrage(s1,s2,s3,s4);
+ return 0;
 }
