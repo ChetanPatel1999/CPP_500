@@ -6,7 +6,7 @@ class circle
   float area;// non static or instance variable
   float circumference;// non static or instance variable
   public:
-  void setradius(float r)// r is local variable
+  circle(float r)// r is local variable
   {
     radius=r;
   }
@@ -23,10 +23,7 @@ class circle
 };
 int main()
 {
- circle c1,c2,c3;
- c1.setradius(4.5);
- c2.setradius(2);
- c3.setradius(5);
+ circle c1(4.5),c2(2),c3(5);
  c1.calculatearea();
  c1.calculatecircumferenece();
  c2.calculatearea();

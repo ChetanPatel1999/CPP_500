@@ -5,7 +5,7 @@ class demo
     int a,b;
     static int c,d;
     public:
-    void setdata(int r,int s,int t,int u)
+    demo(int r,int s,int t,int u)
     {
         a=r;
         b=s;
@@ -21,10 +21,9 @@ int demo::c;
 int demo::d;
 int main()
 {
-    demo d1,d2,d3;
-    d1.setdata(12,13,111,222);
-    d2.setdata(14,15,333,444);
-    d3.setdata(16,17,555,666);
+    demo d1(12,13,111,222);
+    demo d2(14,15,333,444);
+    demo d3(16,17,555,666);
     
    
     d1.display();

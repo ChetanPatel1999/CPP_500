@@ -9,7 +9,7 @@ class student
    static int totalfail;
    static int totalstd;
    public :
-   void setdata(string s,int a,float b)// methods
+   student(string s,int a,float b)// methods
    {
     totalstd++;
     name =s;
@@ -75,11 +75,10 @@ int student::totalfail=0;
 int student::totalstd=0;
 int main()
 {
- student s1,s2,s3,s4;
- s1.setdata("ram",1001,23.67);
- s2.setdata("rohan",1002,90.17);
- s3.setdata("ayush",1003,12.55);
- s4.setdata("shyam",1004,55.55);
+ student s1("ram",1001,23.67);
+ student s2("rohan",1002,90.17);
+ student s3("ayush",1003,12.55);
+ student s4("shyam",1004,55.55);
  s1.diplaystudentresult();
  s2.diplaystudentresult();
  s3.diplaystudentresult();
