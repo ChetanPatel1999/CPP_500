@@ -8,7 +8,12 @@ class circle
   public:
   circle(float r)// r is local variable
   {
+    cout<<"constructer is called"<<endl;
     radius=r;
+  }
+  ~ circle()
+  {
+    cout<<"destructor is called"<<endl;
   }
   void calculatearea()
   {
