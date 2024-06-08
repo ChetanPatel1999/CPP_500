@@ -55,5 +55,5 @@ int main()
  r1.setrno(1001);
  r1.setmarks(45,89);
  r1.displayresult();
-    return 0;
+ return 0;
 }
